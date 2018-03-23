@@ -1,0 +1,19 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-nucleo_lcd_2004",
+      "appliesTo": "BUILD/nucleo_lcd_2004.bin",
+      "type": "launch"
+    },
+    {
+      "taskName": "Flash",
+      "appliesTo": "BUILD/nucleo_lcd_2004.bin",
+      "type": "launch",
+      "command": "${env.COMSPEC}",
+      "args": [
+        "copy BUILD\\nucleo_lcd_2004.bin F:"
+      ]
+    }
+  ]
+}
