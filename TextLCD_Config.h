@@ -34,14 +34,14 @@
 
 //Select hardware interface options to reduce memory footprint (multiple options allowed)
 #define LCD_I2C        1           /* I2C Expander PCF8574/MCP23008 */
-#define LCD_SPI        1           /* SPI Expander SN74595          */
-#define LCD_I2C_N      1           /* Native I2C bus     */
-#define LCD_SPI_N      1           /* Native SPI bus     */
-#define LCD_SPI_N_3_8  1           /* Native SPI bus     */
-#define LCD_SPI_N_3_9  1           /* Native SPI bus     */
-#define LCD_SPI_N_3_10 1           /* Native SPI bus     */
-#define LCD_SPI_N_3_16 1           /* Native SPI bus     */
-#define LCD_SPI_N_3_24 1           /* Native SPI bus     */
+#define LCD_SPI        0           /* SPI Expander SN74595          */
+#define LCD_I2C_N      0           /* Native I2C bus     */
+#define LCD_SPI_N      0           /* Native SPI bus     */
+#define LCD_SPI_N_3_8  0           /* Native SPI bus     */
+#define LCD_SPI_N_3_9  0           /* Native SPI bus     */
+#define LCD_SPI_N_3_10 0           /* Native SPI bus     */
+#define LCD_SPI_N_3_16 0           /* Native SPI bus     */
+#define LCD_SPI_N_3_24 0           /* Native SPI bus     */
 
 //Select options to reduce memory footprint (multiple options allowed)
 #define LCD_UDC        1           /* Enable predefined UDC example*/
@@ -68,10 +68,10 @@
 //LCD and serial portexpanders should be wired according to the tables below.
 //
 //Select Serial Port Expander Hardware module (one option only)
-#define DEFAULT        1
+#define DEFAULT        0
 #define ADAFRUIT       0
 #define DFROBOT        0
-#define LCM1602        0
+#define LCM1602        1
 #define YWROBOT        0
 #define GYLCD          0
 #define MJKDZ          0
